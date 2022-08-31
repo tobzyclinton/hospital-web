@@ -1,0 +1,316 @@
+:root{
+    --primary-color:var(cyan)
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: white;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    font-family: serif;
+}
+
+h1{
+    color: white;
+    font-family: sans-serif;
+}
+
+h4{
+    color: black;
+}
+
+p{
+    color: white;
+    font: large;
+}
+
+ul{
+    list-style: none;
+
+}
+
+li{
+    font-family:'Times New Roman', Times, serif;
+    font: bold;
+    font-size: 13px;
+    padding: 0px 20px;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.first-nav{
+    color: black;
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+span{
+    color: cyan;
+    font: bolder;
+    font-size: 20px;
+}
+
+.div1{
+    margin: 0 auto;
+}
+
+.bold{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.bold1{
+    font-weight: 90px; 
+    font-size: 30px;
+}
+
+.line2{
+    width: 100%;
+    height: 40px;
+    background-color: #047aed;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.second-bar{
+    background-color: #047aed;
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    transition: 1.4s ease;
+}
+
+.second-bar li:hover{
+    transform: scale(1.48);
+    transition: 0.5s ease-in-out;
+
+}
+
+.showcase{
+    width: 100%;
+    height: 500px;
+    padding-left: 100px;
+    background-image: url(images.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    position: static;
+}
+
+.showcase-text{
+    padding-top: 150px;
+    padding-left: 0px;
+    animation: normal;
+    animation-duration: 1.2s;
+}
+
+.showcase-text p{
+    padding: 10px 0px;
+    padding-left: 10px;
+    text-shadow: black;
+    font-size: 12px;
+}
+
+.select{
+    padding-left: 15px;
+    overflow: hidden;
+}
+
+.srch{
+    height: 30px;
+    border: transparent;
+    border-radius: 25px;
+    padding: 10px;
+    float: left;
+    overflow: visible;
+}
+
+.btn-btn:hover{
+    transform: scale(1.48);
+    transition: 0.89s;
+}
+
+.btn{
+    height: 30px;
+    width: 150px;
+    color: white;
+    font-size: 10px;
+    background-color: rgb(12, 243, 31);
+    border: transparent;
+    border-radius: 25px;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.welcome{
+    padding: 30px;
+    padding-left: 220px;
+    font-size: 30px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wlc{
+    text-align: center;
+    padding-bottom: 10px;
+    transition: 1.60s ease;
+}
+
+.wlc-text{
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+.dcp{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.dcp p{
+    color: black;
+    font-size: 13px;
+}
+
+.wlc .grid{
+    text-align: center;
+}
+
+.showcase .grid{
+	overflow: visible;
+	grid-template-columns: 55% 45%;
+	gap: 30px;
+} 
+
+.showcase-form{
+	position: relative;
+	top: 60px;
+	height:350px;
+	width: 400px;
+	padding: 40px;
+	justify-self: flex-end;
+} 
+
+.showcase-form .form-control{
+	margin: 30px 0;
+}
+
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+	border: 0;
+	border-bottom: 1px solid #b4becb;
+	width: 100%;
+	padding: 3px;
+	font-size: 10px;
+}
+
+.showcase-form input:focus{
+	outline: none;
+}
+
+.showcase::before,
+.showcase::after{
+	content: "";
+	position: absolute;
+	height: 50px;
+	right: 0;
+	left: 0;
+}
+
+   /* stats */
+   
+.stats{
+	padding-top: 100px;
+}
+
+  /* utilities */
+
+.container{
+	max-width: 1100px;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 0 40px;
+}
+
+.card{
+	color: #333;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+	padding: 30px 10px;
+	margin: 10px;
+}
+
+.btn2{
+	display: inline-block;
+	padding: 10px 30px;
+	cursor: pointer;
+	background: #047aed;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+.btn-outline{
+	background-color: teal;
+	border: 1px white solid;
+}
+
+.btn2:hover{
+	transform: scale(0.98);
+}
+
+.text-center{
+	text-align: center;
+}
+
+.flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.grid-3{
+	grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+
